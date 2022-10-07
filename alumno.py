@@ -6,7 +6,7 @@ class alumno():
     def __str__(self):
         return "Nombre: {}, Nota: {}".format(self.nombre, self.nota)
     def comprobacion(self):
-        if a >= 5:
+        if self.nota >= 5:
             print( "Aprobado")
         else:
             print ("Suspenso")
@@ -14,3 +14,4 @@ class alumno():
 
 a = alumno("Juan", 5)
 print(a)
+print(a.comprobacion())
