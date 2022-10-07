@@ -10,8 +10,11 @@ class alumno():
             print( "Aprobado")
         else:
             print ("Suspenso")
+    def crear_alumno():
+        nombre = input("Nombre: ")
+        nota = int(input("Nota: "))
+        print("Alumno creado: ", alumno(nombre, nota))
+        print("Comprobacion de la nota")
+        print( alumno.comprobacion(alumno(nombre, nota)))
+alumno.crear_alumno()
 
-
-a = alumno("Juan", 5)
-print(a)
-print(a.comprobacion())
